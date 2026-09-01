@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://github.com/mtaylor45">
-  <img src="./profile-header.svg" alt="Michael Taylor — Software, Systems & Intelligence" width="100%">
+  <img src="./header.svg" alt="Michael Taylor — Software, Systems & Intelligence" width="100%">
 </a>
 
 <br>
