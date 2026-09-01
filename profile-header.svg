@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <foreignObject x="0" y="0" width="1200" height="300">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * { box-sizing: border-box; }
+        body {
+          margin: 0;
+          width: 1200px;
+          height: 300px;
+          background: #080808;
+          color: #ffcc99;
+          font-family: Arial, Helvetica, sans-serif;
+          overflow: hidden;
+        }
+        .frame {
+          width: 1200px;
+          height: 300px;
+          position: relative;
+          background:
+            linear-gradient(rgba(255,153,0,.035) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(153,153,255,.035) 1px, transparent 1px),
+            #080808;
+          background-size: 24px 24px;
+          border: 5px solid #080808;
+        }
+        .top {
+          height: 74px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        .elbow {
+          width: 250px;
+          height: 74px;
+          background: #ff9900;
+          border-radius: 0 0 42px 0;
+          position: relative;
+        }
+        .elbow:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 46px;
+          height: 46px;
+          background: #080808;
+          border-radius: 0 0 0 30px;
+        }
+        .bar {
+          flex: 1;
+          height: 38px;
+          background: #9999ff;
+          border-radius: 0 22px 22px 0;
+          position: relative;
+        }
+        .bar:after {
+          content: "MTAYLOR45 // PERSONAL SYSTEMS";
+          position: absolute;
+          right: 22px;
+          top: 10px;
+          color: #080808;
+          font-size: 13px;
+          font-weight: 700;
+          letter-spacing: 2px;
+        }
+        .content {
+          display: flex;
+          gap: 10px;
+          height: 164px;
+          margin-top: 10px;
+        }
+        .rail {
+          width: 110px;
+          background: #cc99cc;
+          border-radius: 0 24px 24px 0;
+          padding: 18px 12px;
+          color: #080808;
+          font-weight: 800;
+          font-size: 12px;
+          line-height: 1.7;
+          letter-spacing: 1px;
+        }
+        .main {
+          flex: 1;
+          padding: 8px 18px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .eyebrow {
+          color: #66cccc;
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 4px;
+          margin-bottom: 8px;
+        }
+        h1 {
+          margin: 0;
+          color: #ffcc99;
+          font-size: 44px;
+          letter-spacing: 2px;
+          line-height: 1;
+          font-weight: 800;
+        }
+        .subtitle {
+          margin-top: 13px;
+          color: #ff9966;
+          font-size: 18px;
+          letter-spacing: 2px;
+        }
+        .signals {
+          width: 270px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 9px;
+          padding-right: 15px;
+        }
+        .signal {
+          height: 28px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .signal .label {
+          width: 105px;
+          font-size: 10px;
+          letter-spacing: 1px;
+          color: #ffcc99;
+        }
+        .meter {
+          flex: 1;
+          height: 11px;
+          background: #202020;
+          overflow: hidden;
+        }
+        .fill { height: 100%; }
+        .orange { width: 88%; background: #ff9900; }
+        .blue { width: 94%; background: #9999ff; }
+        .cyan { width: 76%; background: #66cccc; }
+        .lav { width: 84%; background: #cc99cc; }
+        .bottom {
+          height: 42px;
+          margin-top: 10px;
+          display: flex;
+          gap: 10px;
+        }
+        .bottom .cell {
+          height: 30px;
+          background: #cc9966;
+          flex: 1;
+          padding: 8px 14px;
+          color: #080808;
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: 1px;
+        }
+        .bottom .cell:first-child { border-radius: 18px 0 0 18px; }
+        .bottom .cell:last-child {
+          background: #ff9900;
+          border-radius: 0 18px 18px 0;
+          text-align: right;
+        }
+      </style>
+      <div class="frame">
+        <div class="top">
+          <div class="elbow"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="content">
+          <div class="rail">
+            SYSTEMS<br/>
+            AI<br/>
+            DATA<br/>
+            INFRA<br/>
+            DESIGN
+          </div>
+          <div class="main">
+            <div class="eyebrow">SOFTWARE // SYSTEMS // INTELLIGENCE</div>
+            <h1>MICHAEL TAYLOR</h1>
+            <div class="subtitle">BUILDING USEFUL MACHINES, ONE SYSTEM AT A TIME.</div>
+          </div>
+          <div class="signals">
+            <div class="signal"><div class="label">LOCAL AI</div><div class="meter"><div class="fill orange"></div></div></div>
+            <div class="signal"><div class="label">SYSTEMS</div><div class="meter"><div class="fill blue"></div></div></div>
+            <div class="signal"><div class="label">DATA</div><div class="meter"><div class="fill cyan"></div></div></div>
+            <div class="signal"><div class="label">DESIGN</div><div class="meter"><div class="fill lav"></div></div></div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="cell">STATUS: ONLINE // LOCAL-FIRST // SELF-HOSTED</div>
+          <div class="cell">LCARS // READY</div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
