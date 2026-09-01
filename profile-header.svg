@@ -1,0 +1,256 @@
+<svg fill="none" width="800" height="360" viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#000000" rx="12"/>
+  
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        .lcars-container {
+          width: 800px;
+          height: 360px;
+          background-color: #000000;
+          padding: 12px 16px;
+          font-family: 'Antonio', 'Impact', 'Arial Narrow', sans-serif;
+          color: #ff9900;
+          user-select: none;
+          overflow: hidden;
+          position: relative;
+        }
+
+        /* LCARS Header Bar */
+        .lcars-topbar {
+          display: flex;
+          align-items: flex-end;
+          gap: 6px;
+          height: 32px;
+          margin-bottom: 6px;
+        }
+        .lcars-top-pill {
+          background-color: #9999ff;
+          height: 100%;
+          width: 80px;
+          border-top-left-radius: 16px;
+          border-bottom-left-radius: 16px;
+        }
+        .lcars-top-title {
+          font-size: 22px;
+          font-weight: 900;
+          letter-spacing: 2px;
+          color: #ff9900;
+          text-transform: uppercase;
+          line-height: 28px;
+          flex-grow: 1;
+        }
+        .lcars-top-stardate {
+          font-size: 14px;
+          color: #ff9966;
+          letter-spacing: 1px;
+          margin-right: 8px;
+        }
+        .lcars-top-endcap {
+          background-color: #cc6699;
+          height: 100%;
+          width: 40px;
+          border-top-right-radius: 16px;
+          border-bottom-right-radius: 16px;
+        }
+
+        /* Main Frame Layout */
+        .lcars-body {
+          display: flex;
+          gap: 10px;
+          height: 295px;
+        }
+
+        /* Left Curved Elbow & Button Column */
+        .lcars-sidebar {
+          width: 170px;
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+        
+        .lcars-elbow {
+          height: 80px;
+          background-color: #ff9900;
+          border-top-left-radius: 24px;
+          position: relative;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+          padding: 6px 12px;
+          color: #000;
+          font-weight: bold;
+          font-size: 14px;
+          letter-spacing: 1px;
+        }
+
+        .lcars-btn {
+          height: 32px;
+          padding: 0 12px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 13px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          color: #000000;
+          text-transform: uppercase;
+          border-top-left-radius: 14px;
+          border-bottom-left-radius: 14px;
+        }
+
+        .bg-orange { background-color: #ff9900; }
+        .bg-peach  { background-color: #ff9966; }
+        .bg-purple { background-color: #9999ff; }
+        .bg-rose   { background-color: #cc6699; }
+        .bg-blue   { background-color: #4a90e2; }
+
+        /* Main Content Display Screen */
+        .lcars-screen {
+          flex-grow: 1;
+          border: 2px solid #9999ff;
+          border-radius: 8px;
+          padding: 14px 18px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          background: radial-gradient(circle at 90% 10%, rgba(153, 153, 255, 0.05) 0%, rgba(0,0,0,1) 70%);
+          position: relative;
+        }
+
+        /* Numerics Stream */
+        .lcars-data-stream {
+          font-family: monospace;
+          font-size: 11px;
+          color: #cc6699;
+          letter-spacing: 3px;
+          white-space: nowrap;
+          overflow: hidden;
+          opacity: 0.8;
+          margin-bottom: 10px;
+        }
+
+        .lcars-profile-title {
+          font-size: 28px;
+          font-weight: 900;
+          color: #ff9900;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          border-bottom: 2px solid #ff9966;
+          padding-bottom: 4px;
+          margin-bottom: 12px;
+        }
+
+        .lcars-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+          font-family: 'Courier New', monospace;
+        }
+
+        .lcars-readout-box {
+          background-color: rgba(255, 153, 0, 0.08);
+          border-left: 3px solid #ff9966;
+          padding: 8px 10px;
+        }
+
+        .lcars-label {
+          font-size: 11px;
+          color: #9999ff;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: bold;
+        }
+
+        .lcars-val {
+          font-size: 13px;
+          color: #ffffff;
+          font-weight: bold;
+          margin-top: 2px;
+        }
+
+        .lcars-status-bar {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #111122;
+          border-radius: 4px;
+          padding: 6px 12px;
+          margin-top: 8px;
+        }
+
+        .blink-text {
+          animation: lcarsBlink 1.2s infinite alternate;
+          color: #ff9900;
+          font-size: 12px;
+          font-weight: bold;
+          letter-spacing: 1px;
+        }
+
+        @keyframes lcarsBlink {
+          0% { opacity: 0.2; }
+          100% { opacity: 1; }
+        }
+      </style>
+
+      <div class="lcars-container">
+        <!-- Top Bar Header -->
+        <div class="lcars-topbar">
+          <div class="lcars-top-pill"></div>
+          <div class="lcars-top-title">LCARS COMPUTER ACCESS 47-MT // MAIN DATABASE</div>
+          <div class="lcars-top-stardate">STARDATE 103672.4</div>
+          <div class="lcars-top-endcap"></div>
+        </div>
+
+        <!-- Main Body -->
+        <div class="lcars-body">
+          <!-- Sidebar Controls -->
+          <div class="lcars-sidebar">
+            <div class="lcars-elbow">RECORD 47-MT</div>
+            <div class="lcars-btn bg-purple"><span>SYSTEMS</span> <span>OPERATIONAL</span></div>
+            <div class="lcars-btn bg-peach"><span>CLUSTER</span> <span>ONLINE</span></div>
+            <div class="lcars-btn bg-orange"><span>DEVOPS</span> <span>ACTIVE</span></div>
+            <div class="lcars-btn bg-rose"><span>AI CORE</span> <span>COMPUTING</span></div>
+            <div class="lcars-btn bg-blue"><span>NOMINAL</span> <span>UPLINK</span></div>
+          </div>
+
+          <!-- Central Data Screen -->
+          <div class="lcars-screen">
+            <div>
+              <div class="lcars-data-stream">
+                8057 875 403 210 88 92380 54 8282 5522 793701 193 47000 6200831 3438
+              </div>
+              <div class="lcars-profile-title">MIKE TAYLOR</div>
+            </div>
+
+            <div class="lcars-grid">
+              <div class="lcars-readout-box">
+                <div class="lcars-label">PRIMARY DIRECTIVE</div>
+                <div class="lcars-val">SYSTEMS BUILDER • SOFTWARE &amp; INFRA</div>
+              </div>
+              <div class="lcars-readout-box">
+                <div class="lcars-label">TACTICAL SECTOR</div>
+                <div class="lcars-val">NORTHERN VIRGINIA</div>
+              </div>
+              <div class="lcars-readout-box">
+                <div class="lcars-label">COMPUTE MATRIX</div>
+                <div class="lcars-val">PROXMOX CLUSTER • DOCKER SWARM</div>
+              </div>
+              <div class="lcars-readout-box">
+                <div class="lcars-label">NEURAL NETWORK ENGINE</div>
+                <div class="lcars-val">LOCAL LLMS • GEMMA 4 • DEEPSEEK</div>
+              </div>
+            </div>
+
+            <div class="lcars-status-bar">
+              <span style="color:#9999ff; font-size:11px; letter-spacing:1px;">PRIMARY COMPUTER CORE STATUS:</span>
+              <span class="blink-text">SYSTEMS OPERATIONAL • ALL NODES ACTIVE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
