@@ -19,7 +19,7 @@
 
 ---
 
-## 👋 Hello, I'm Michael
+## 👋 Hello, I'm Mike
 
 I'm a software builder who likes putting **software, data, AI, and physical infrastructure together into useful systems**.
 
